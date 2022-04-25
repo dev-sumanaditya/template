@@ -1,0 +1,38 @@
+<div class="max-w-6xl mx-auto px-4">
+  <app-navbar2></app-navbar2>
+
+  <div class="py-12 grid grid-cols-1 md:grid-cols-2 gap-10">
+    <!-- left section -->
+    <div class="border-black rounded-xl select-none" data-aos="fade-right" data-aos-once="true">
+      <div class="relative" [ngStyle]="{paddingTop: '100%'}">
+        <div class="absolute rounded-xl ring-2 ring-black border-black overflow-hidden top-0 left-0 right-0 bottom-0 bg-cover bg-center bg-no-repeat" [ngStyle]="{'background-image': 'url(/assets/images/course-img-2.jpg)'}">
+          <div class="h-full w-full bg-black bg-opacity-50 flex flex-col justify-end p-8">
+              <h3 class="text-3xl lg:text-6xl text-white w-1/3 font-semibold">Physician Courses.</h3>
+              <div class="mt-6 flex justify-between items-end">
+                <div class="bg-white rounded-lg w-1/2 px-4 py-4 flex items-center justify-center text-xl uppercase cursor-pointer">Start</div>
+                <p class="text-xl text-white font-semibold">12 Lessons</p>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- right section -->
+    <div class="flex flex-col justify-between" data-aos="fade-up" data-aos-once="true">
+      <div class="">
+        <h2 class="text-4xl">Physician Courses.</h2>
+        <div class="py-4">
+          <!-- this will also be quill -> multiple paragraph | text only | fixed font & fontsize  -->
+          <!-- content here will be innerHTML -->
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+          <br>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+        </div>
+      </div>
+
+      <div class="mt-6 lg:mt-2">
+        <div class="bg-black rounded-lg w-full lg:w-1/2 px-4 py-4 flex items-center justify-center text-white text-xl uppercase cursor-pointer">Start</div>
+      </div>
+    </div>
+  </div>
+</div>

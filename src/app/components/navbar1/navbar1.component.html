@@ -1,0 +1,21 @@
+<div class=" py-6 bg-gray-20 select-none" data-aos="fade-in" data-aos-once="true">
+  <div class="flex flex-row gap-8 w-full">
+    <div class="flex-1/6">
+      <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold uppercase">Bullard</h1>
+    </div>
+    <div class="hidden lg:flex flex-grow flex-row gap-8 px-6 items-center justify-center mr-10 mt-2">
+      <!-- Home, Courses and pricing are three sub-sections of same page. -->
+      <a [routerLink]="['/']" fragment="home" class="text-xl font-semibold">Home</a>
+      <a [routerLink]="['/']" exact fragment="courses" class="text-xl font-semibold">Cources</a>
+      <a [routerLink]="['/']" fragment="pricing" class="text-xl font-semibold">Pricing</a>
+    </div>
+    <div class="flex-1/6">
+      <a [routerLink]="['/login']" class="hidden lg:flex px-12 py-3 text-lg uppercase bg-black hover:bg-gray-800 text-white rounded-lg cursor-pointer">Login</a>
+    </div>
+    <div class="lg:hidden flex flex-grow row justify-end items-center">
+      <div class="p-2 hover:scale-105 cursor-pointer">
+        <img src="/assets/icons/menu-icon.png" class="w-10" alt="">
+      </div>
+    </div>
+  </div>
+</div>
