@@ -5,21 +5,27 @@
     <div class="">
       <h1 class="text-5xl md:text-6xl" data-aos="fade-left" data-aos-once="true">Profile.</h1>
       <div class="py-8">
-        <form onsubmit="">
+        <!-- Profile Form -->
+        <form>
           <div class="grid grid-cols-1 gap-8" data-aos="fade-in" data-aos-once="true">
-            <div class="grid grid-cols-2 gap-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
               <input type="text" placeholder="First Name" class="bg-f5f5f5 px-6 py-6 hover:bg-gray-200 w-full text-lg lg:text-xl rounded-xl">
               <input type="text" placeholder="Last Name" class="bg-f5f5f5 px-6 py-6 hover:bg-gray-200 w-full text-lg lg:text-xl rounded-xl">
             </div>
-            <div class="grid grid-cols-2 gap-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
               <input type="text" placeholder="Designation" class="bg-f5f5f5 px-6 py-6 hover:bg-gray-200 w-full text-lg lg:text-xl rounded-xl">
               <input type="text" placeholder="Name of Organisation" class="bg-f5f5f5 px-6 py-6 hover:bg-gray-200 w-full text-lg lg:text-xl rounded-xl">
             </div>
             <div class="grid grid-cols-1 gap-8">
               <input type="text" placeholder="Office Address" class="bg-f5f5f5 px-6 py-6 hover:bg-gray-200 w-full text-lg lg:text-xl rounded-xl">
             </div>
-            <div class="grid grid-cols-2">
-              <button type="submit" class="bg-black text-white rounded-xl px-6 py-6 flex justify-center items-center">Save</button>
+            <div class="grid grid-cols-1 md:grid-cols-2">
+              <button type="submit" (click)="handleSubmit()" class="bg-black text-white rounded-xl px-6 py-6 flex justify-center items-center">
+                <span *ngIf="!submitting" class="uppercase">Save</span>
+                <svg *ngIf="submitting" class="h-6 w-6 text-white animate-spin" viewBox="0 0 180 210" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0.753761 30.7538C15.4383 16.0692 34.1475 6.06896 54.5155 2.01752C74.8835 -2.03393 95.9955 0.0454168 115.182 7.99262C134.368 15.9398 150.767 29.3979 162.304 46.6651C173.842 63.9323 180 84.2329 180 105C180 125.767 173.842 146.068 162.304 163.335C150.767 180.602 134.368 194.06 115.182 202.007C95.9955 209.955 74.8835 212.034 54.5155 207.982C34.1475 203.931 15.4383 193.931 0.753761 179.246L19.3153 160.685C30.3287 171.698 44.3606 179.198 59.6366 182.237C74.9126 185.275 90.7466 183.716 105.136 177.756C119.526 171.795 131.825 161.702 140.478 148.751C149.131 135.801 153.75 120.575 153.75 105C153.75 89.4247 149.131 74.1992 140.478 61.2488C131.825 48.2984 119.526 38.2049 105.136 32.2445C90.7466 26.2841 74.9126 24.7245 59.6366 27.7631C44.3606 30.8017 30.3287 38.3019 19.3153 49.3153L0.753761 30.7538Z" fill="currentColor"/>
+                </svg>
+              </button>
             </div>
           </div>
         </form>
